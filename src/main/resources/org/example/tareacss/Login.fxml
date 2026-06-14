@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tareacss.LoginController">
+    <children>
+        <Label fx:id="label1" layoutX="74.0" layoutY="15.0" text="MiTienda" />
+        <Label fx:id="label2" layoutX="76.0" layoutY="32.0" text="Sistema de ventas" />
+        <Label fx:id="label3" layoutX="29.0" layoutY="67.0" text="Iniciar Sesión" />
+        <Label fx:id="label4" layoutX="29.0" layoutY="93.0" prefHeight="17.0" prefWidth="80.0" text="Usuario" />
+        <TextField fx:id="text1" layoutX="29.0" layoutY="110.0" prefHeight="34.0" prefWidth="244.0" />
+        <Label fx:id="label6" layoutX="29.0" layoutY="150.0" prefHeight="17.0" prefWidth="96.0" text="Contraseña" />
+        <Label fx:id="label7" layoutX="29.0" layoutY="209.0" prefHeight="17.0" prefWidth="58.0" text="Rol" />
+        <ComboBox fx:id="rol" layoutX="29.0" layoutY="226.0" prefHeight="34.0" prefWidth="244.0" promptText="-Seleccionar-" />
+        <Button fx:id="Ingreso" layoutX="29.0" layoutY="277.0" mnemonicParsing="false" onAction="#Ingresar" prefHeight="34.0" prefWidth="244.0" text="Ingresar" />
+        <Label fx:id="label9" alignment="CENTER" layoutX="29.0" layoutY="19.0" prefHeight="27.0" prefWidth="30.0" text="🛒" />
+        <Label fx:id="label8" layoutX="29.0" layoutY="329.0" prefHeight="27.0" prefWidth="244.0" />
+        <PasswordField fx:id="text2" layoutX="29.0" layoutY="167.0" prefHeight="34.0" prefWidth="244.0" />
+    </children>
+</AnchorPane>
+
