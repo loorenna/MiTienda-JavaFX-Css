@@ -41,10 +41,14 @@ public class LoginController {
 
     @FXML
     private void Ingresar(){
-        String user=text1.getText();
-        String contrasenia=text2.getText();
-        String rolSelec=rol.getValue();
-        label8.setText(user+"/"+contrasenia+"/"+rolSelec);
+        String user = text1.getText();
+        String contrasenia = text2.getText();
+        String rolSelec = rol.getValue();
+        if (rolSelec.equals("Administrador")) {
+            label8.setText(user + "/" + contrasenia + "/" + rolSelec);
+        }else {
+            label8.setText("Rol no disponible");
+        }
         try {
             if (rolSelec.equals("Administrador")){
                 FXMLLoader loader= new FXMLLoader(getClass().getResource("Admi.fxml"));
